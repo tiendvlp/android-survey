@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFFFFF">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorRed"
+        android:textSize="30sp"
+        android:fontFamily="@font/impact"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        />
+
+    <FrameLayout
+        android:id="@+id/layoutContainerSurveyResult"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

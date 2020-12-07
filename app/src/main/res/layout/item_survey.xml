@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorRed"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="7dp"
+    android:layout_marginLeft="10dp"
+    android:paddingBottom="12dp"
+    android:weightSum="11"
+    android:background="@drawable/loginbuttonbackground">
+    
+    <ImageView
+        android:id="@+id/iconSurvey"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toTopOf="@id/txtTitle"
+        app:layout_constraintBottom_toBottomOf="@id/txtTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/icon_survey" />
+    
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MBTI"
+        android:layout_marginLeft="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/iconSurvey"
+        />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_weight="6"
+        android:lineSpacingExtra="0.5sp"
+        android:maxLines="4"
+        android:text="We want to know if you are introverted or extroverted to improve the way we organize class."
+        android:textColor="#DADDE6"
+        android:textSize="9.5sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/iconSurvey"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtNumberOfQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="65 Questions"
+        android:layout_marginTop="6dp"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/txtDescription"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_arrow"
+        app:layout_constraintRight_toRightOf="@id/txtDescription"
+        app:layout_constraintTop_toTopOf="@id/txtNumberOfQuestion"
+        app:layout_constraintBottom_toBottomOf="@id/txtNumberOfQuestion"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

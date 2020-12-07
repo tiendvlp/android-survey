@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="10dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/element_header_quickquestion" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorBackgroundQuickQuestion"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtQuestionBody"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:autoSizeMaxTextSize="16sp"
+            android:autoSizeMinTextSize="13sp"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:maxLines="2"
+            android:text="Which price do your think is more suitable for the chicken soup ? asds jsnd jsnd jsdn ajsnd jsnd jsnd jnsd jnsd "
+            android:textColor="#A7401D"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rbtngrAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rbtnAnswer1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_quick_answer"
+                android:button="@null"
+                android:drawablePadding="20dp"
+                android:paddingLeft="15dp"
+                android:textAlignment="center"
+                android:paddingTop="7dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="7dp"
+                android:textColor="#A7401D"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rbtnAnswer2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_quick_answer"
+                android:button="@null"
+                android:drawablePadding="20dp"
+                android:textAlignment="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="7dp"
+                android:textColor="#A7401D"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rbtnAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_quick_answer"
+                android:button="@null"
+                android:drawablePadding="20dp"
+                android:paddingLeft="15dp"
+                android:textAlignment="center"
+                android:paddingTop="7dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="7dp"
+                android:textColor="#A7401D"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RadioGroup>
+
+
+        <com.devlogs.osg.apolo.fptsurvey.screen.common.customview.Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnsubmit_background"
+            android:elevation="0dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="customid1" type="id"></item>
+    <item name="customid2" type="id"></item>
+    <item name="customid3" type="id"></item>
+    <item name="customid4" type="id"></item>
+    <item name="customid5" type="id"></item>
+    <item name="customid6" type="id"></item>
+    <item name="customid7" type="id"></item>
+    <item name="customid8" type="id"></item>
+    <item name="customid9" type="id"></item>
+    <item name="customid10" type="id"></item>
+</resources>

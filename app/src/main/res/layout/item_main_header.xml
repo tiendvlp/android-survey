@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:weightSum="11"
+    android:paddingTop="50dp"
+    >
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:fontFamily="@font/impact"
+        android:text="Survey"
+        android:textColor="#5C8FAA"
+        android:textSize="32sp"
+        android:layout_weight="10"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:maxHeight="30dp"
+        android:layout_gravity="center"
+        android:maxWidth="30dp"
+        android:src="@drawable/icon_user"
+        android:layout_weight="1" />
+</LinearLayout>

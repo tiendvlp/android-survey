@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutError"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animError"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="error_anim.json"
+        app:lottie_loop="true" />
+
+    <com.devlogs.osg.apolo.fptsurvey.screen.common.customview.Button
+        android:id="@+id/btnShowError"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/icon_more_info" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OOPS!! ERRORS"
+        android:fontFamily="@font/impact"
+        android:layout_marginTop="0dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorRed"/>
+        android:textSize="35sp" />
+
+    <com.devlogs.osg.apolo.fptsurvey.screen.common.customview.Button
+        android:id="@+id/btnRetry"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/loginbuttonbackground"
+        android:backgroundTint="@color/colorRed"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:text="Retry" />
+
+
+</LinearLayout>

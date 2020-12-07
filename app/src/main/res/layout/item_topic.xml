@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:paddingTop="15dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/divideline"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_weight="0.01"
+        android:background="#DADDE6"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txtProgress"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_height="wrap_content"
+        android:text="We’re trying to improve the way our teachers interact with you"
+        android:textColor="@color/colorRed"
+        android:textSize="10sp" />
+
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_height="wrap_content"
+        android:text="Students’ personalities"
+        android:textColor="#5C8FAA"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

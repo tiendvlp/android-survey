@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    android:id="@+id/rbtnAnswer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_answer"
+    android:padding="10dp"
+    android:button="@null"
+    android:textSize="12sp"
+    android:text="Not angry because you want to faraway her too !! Fuck her !! Hahaha"
+    android:drawablePadding="20dp"
+    android:drawableLeft="@drawable/drawable_checked_button"
+    android:textColor="#000000" />

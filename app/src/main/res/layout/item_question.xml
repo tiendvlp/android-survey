@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding"
+    android:paddingRight="@dimen/padding"
+    android:layout_marginTop="30dp"
+    android:background="#FFFFFF">
+    
+    <TextView
+        android:id="@+id/txtQuestionContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1: How do you feel when you reallize your girl friend betrayed you ?"
+        android:textColor="@color/colorLightCyan"
+        android:textStyle="bold"
+        android:textSize="19sp" />
+
+    <RadioGroup
+        android:id="@+id/rbtngrAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="26dp" >
+    </RadioGroup>
+
+</LinearLayout>

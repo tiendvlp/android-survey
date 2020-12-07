@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_rounded_four"
+    android:backgroundTint="#B0D1C8"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imgStatusType"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:src="@drawable/icon_info"
+        android:scaleType="centerInside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/centerHorizontalguide"
+        app:layout_constraintBottom_toBottomOf="@id/centerHorizontalguide"
+        android:layout_marginLeft="9dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerHorizontalguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"/>
+
+    <TextView
+        android:id="@+id/txtStatusType"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="Finish"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/centerHorizontalguide"
+        app:layout_constraintLeft_toRightOf="@id/imgStatusType"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#4CA68A"/>
+
+    <TextView
+        android:id="@+id/txtStatusBody"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:maxLines="2"
+        android:text="We have already fixed the wifi network, hello hahahah hahahah ahhaahhaha asdasdhb asdhbasdhasbd asdhb sdb"
+        android:textSize="9sp"
+        app:layout_constraintTop_toBottomOf="@+id/centerHorizontalguide"
+        app:layout_constraintLeft_toLeftOf="@+id/txtStatusType"
+        app:layout_constraintRight_toRightOf="@id/txtStatusType"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="7dp"
+        android:textColor="#5E5E5E"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
