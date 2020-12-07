@@ -1,7 +1,7 @@
 # surveyandroid
  
 10/2020, This is my semester-end project, my school can use this app to survey thier student.
-![alt text](https://drive.google.com/file/d/1H21BiX4gvvCejf-tBrIaWeg8KKxQbZu4/view?usp=sharing)
+![](http://i.imgur.com/OUkLi.gif)
 
 SurveyApp includes 3 parts:
 1. Quick question: My school can add some quick question like (What would you like to eat today ?)
