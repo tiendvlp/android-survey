@@ -5,7 +5,7 @@
 
 SurveyApp includes 3 parts:
 1. Quick question: My school can add some quick question like (What would you like to eat today ?)
-![alt text](https://scontent.xx.fbcdn.net/v/t1.15752-9/130290391_139149607719319_1294056621840587524_n.jpg?_nc_cat=111&ccb=2&_nc_sid=58c789&_nc_ohc=2A_cmqMJHEkAX-z9F4I&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=a527bd1a1315a3342438ebd00cce503e&oe=5FF4344E)
+![alt text](https://scontent.xx.fbcdn.net/v/t1.15752-9/129727476_432998291204587_7180562754421564297_n.jpg?_nc_cat=110&ccb=2&_nc_sid=58c789&_nc_ohc=wpg8gwGb-pcAX8J69p8&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=9020df250565f0ac15416aa248b7210d&oe=5FF3C65D)
 
 
 2. Status: Student wants to know what thier school do with your data
