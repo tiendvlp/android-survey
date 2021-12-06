@@ -129,6 +129,7 @@ public class LoginActivity extends AppCompatActivity implements LoginMvcView.Lis
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+        Log.d("MainActivity", "OnActivityResult: " + requestCode);
         if (requestCode == 200) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
@@ -138,12 +139,11 @@ public class LoginActivity extends AppCompatActivity implements LoginMvcView.Lis
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
-            Log.d("GG token","token: "+ account.getIdToken());
+            Log.d("GGToken","token: "+ account.getIdToken());
             loginController.loginWithFptGmail(account.getIdToken());
             updateAutoLoginSetting();
         } catch (ApiException e) {
-            // The ApiException status code indicates the detailed failure reason.
-            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.d("MainActivity", "Login with google error: " + e.getMessage() );
         }
     }
 

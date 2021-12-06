@@ -40,7 +40,7 @@ class LoginController  {
 
                     @Override
                     public void onError(@NonNull Throwable e) {
-                        Log.d("LoginController", "OnError");
+                        Log.d("LoginController", "OnError: "+ e.getMessage());
                         mStateStore.updateState(new LoginScreenState.NotLoggedInState());
                     }
                 }

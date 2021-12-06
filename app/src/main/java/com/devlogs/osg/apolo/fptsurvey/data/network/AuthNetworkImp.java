@@ -1,5 +1,7 @@
 package com.devlogs.osg.apolo.fptsurvey.data.network;
 
+import android.util.Log;
+
 import com.devlogs.osg.apolo.fptsurvey.data.network.common.AuthRestClientConfig;
 import com.devlogs.osg.apolo.fptsurvey.domain.data.AuthNetwork;
 import com.devlogs.osg.apolo.fptsurvey.domain.data.model.AuthNetworkModel;
@@ -33,7 +35,9 @@ public class AuthNetworkImp implements AuthNetwork {
             public void subscribe(@NonNull SingleEmitter<AuthNetworkModel> emitter) throws Throwable {
                 AuthRestClientConfig client = mRetrofit.create(AuthRestClientConfig.class);
                 Map<String, String> header = new HashMap<String, String>();
-                header.put("Authorization","Bearer " + googleIdToken);
+                String bearerAuth = "Bearer " + googleIdToken;
+                Log.d("AuthNetworkImp", bearerAuth);
+                header.put("authorization",bearerAuth);
                 client.loginWithFptGmail(header).enqueue(new Callback<AuthNetworkModel>() {
                     @Override
                     public void onResponse(Call<AuthNetworkModel> call, Response<AuthNetworkModel> response) {

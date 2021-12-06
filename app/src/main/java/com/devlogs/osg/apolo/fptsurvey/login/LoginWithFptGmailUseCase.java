@@ -26,28 +26,10 @@ public class LoginWithFptGmailUseCase {
     }
 
     public Completable execute(String googleTokenId) {
-        return Completable.create(new CompletableOnSubscribe() {
-            @Override
-            public void subscribe(@NonNull CompletableEmitter emitter) {
-                mLogin.loginWithFptGmail(googleTokenId).subscribe(new Consumer<AuthNetworkModel>() {
-                    @Override
-                    public void accept(AuthNetworkModel authNetworkModel) {
-                        mDisk.saveToken(new AuthDisk.SaveTokenParam(authNetworkModel.getAccessToken()))
-                        .subscribe(new Action() {
-                            @Override
-                            public void run() {
-                                emitter.onComplete();
-                            }
-                        });
-                    }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(Throwable throwable) {
-                        emitter.onError(throwable);
-                    }
-                });
-            }
-        }).subscribeOn(AndroidSchedulers.mainThread()).observeOn(Schedulers.newThread());
+        return Completable.create(emitter -> mLogin.loginWithFptGmail(googleTokenId)
+                .subscribe(authNetworkModel -> mDisk.saveToken(new AuthDisk.SaveTokenParam(authNetworkModel.getAccessToken()))
+                .subscribe(() -> emitter.onComplete()), throwable -> emitter.onError(throwable)))
+                .subscribeOn(AndroidSchedulers.mainThread()).observeOn(Schedulers.newThread());
     }
 
 }

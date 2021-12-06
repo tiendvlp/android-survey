@@ -22,11 +22,12 @@ public class DialogManager {
     }
 
 
+
     public Observable<DialogEventPublisher.Listener> showUserInfoDialog (UserInfoDialogPM userInfo) {
         List<Fragment> fragments = fragmentManager.getFragments();
 
         for (Fragment fragment : fragments) {
-            if (DialogFragment.class.isAssignableFrom(fragment.getClass())) {
+                if (DialogFragment.class.isAssignableFrom(fragment.getClass())) {
                 ((DialogFragment) fragment).dismissAllowingStateLoss();
             }
 
