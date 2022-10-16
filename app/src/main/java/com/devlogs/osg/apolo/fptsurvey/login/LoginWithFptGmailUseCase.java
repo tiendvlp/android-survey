@@ -31,6 +31,5 @@ public class LoginWithFptGmailUseCase {
                 .subscribe(() -> emitter.onComplete()), throwable -> emitter.onError(throwable)))
                 .subscribeOn(AndroidSchedulers.mainThread()).observeOn(Schedulers.newThread());
     }
-
 }
 

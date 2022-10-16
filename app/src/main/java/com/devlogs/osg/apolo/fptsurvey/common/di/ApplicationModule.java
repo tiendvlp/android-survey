@@ -34,10 +34,8 @@ public class ApplicationModule {
         final OkHttpClient okHttpClient = new OkHttpClient.Builder().callTimeout(21, TimeUnit.SECONDS).connectTimeout(21, TimeUnit.SECONDS).build();
 
         return new Retrofit.Builder()
-//        http://10.0.2.2:8080/api/v1/
-// 172.20.10.4
-                .baseUrl("https://surveyserverspringboot.herokuapp.com/api/v1/")
-//                .baseUrl("http://10.0.2.2:8080/api/v1/")
+//                .baseUrl("https://surveyserverspringboot.herokuapp.com/api/v1/")
+                .baseUrl("http://10.0.2.2:8080/api/v1/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();

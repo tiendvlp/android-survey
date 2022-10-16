@@ -10,4 +10,6 @@ public interface EndSurveyMvcView extends Observable<EndSurveyMvcView.Listener>,
     }
 
     public void drawUI (String layout, String data);
+
+    public void setTitle(String title);
 }

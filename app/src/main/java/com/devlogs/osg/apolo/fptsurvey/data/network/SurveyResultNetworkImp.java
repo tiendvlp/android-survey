@@ -66,7 +66,7 @@ public class SurveyResultNetworkImp implements SurveyResultNetwork {
                 header.put("Authorization","Bearer " + idToken);
 
             SurveyResultRestClientConfig client = mRetrofit.create(SurveyResultRestClientConfig.class);
-            client.getSurveyResult("survey/resultv2/getResult?id=" + "5fb138f4e162fe2febcd99fb", header).enqueue(new Callback<ResponseBody>() {
+            client.getSurveyResult("survey/resultv2/getResult?id=" + resultId, header).enqueue(new Callback<ResponseBody>() {
                 @Override
                 public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                     if (response.code() == 200) {

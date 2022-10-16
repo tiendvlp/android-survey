@@ -1,8 +1,10 @@
 package com.devlogs.osg.apolo.fptsurvey.screen.endscreen.mvcview;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.devlogs.osg.apolo.fptsurvey.R;
 import com.devlogs.osg.apolo.fptsurvey.screen.common.basemvcview.BaseMvcView;
@@ -21,14 +23,17 @@ import java.io.StringReader;
 
 public class EndSurveyMvcViewImp extends BaseMvcView<EndSurveyMvcView.Listener> implements EndSurveyMvcView {
     private FrameLayout containerSurveyResult;
+    private TextView txtTestTitle;
 
     public EndSurveyMvcViewImp (LayoutInflater inflater, ViewGroup container) {
         setRootView(inflater.inflate(R.layout.layout_endsurvey, container, false));
         container = findViewById(R.id.layoutContainerSurveyResult);
+        txtTestTitle = findViewById(R.id.txtTestTitle);
     }
 
     @Override
     public void drawUI(String layoutDescriptor, String layoutData) {
+        Log.d("tiendang-debug", "Layout Desccriptor: " + layoutDescriptor);
         ViewGroup container = findViewById(R.id.layoutContainerSurveyResult);
 
         // create a new instance of proteus
@@ -53,9 +58,14 @@ public class EndSurveyMvcViewImp extends BaseMvcView<EndSurveyMvcView.Listener> 
         ProteusLayoutInflater inflater = context.getInflater();
 
         // Inflate the layout
-        ProteusView view = inflater.inflate(layout, data, container, 0);
+        ProteusView view = inflater.inflate(layout, data, null, 0);
 
         // Add the inflated layout into the container
         container.addView(view.getAsView());
+    }
+
+    @Override
+    public void setTitle(String title) {
+        txtTestTitle.setText(title);
     }
 }

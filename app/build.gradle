@@ -58,9 +58,6 @@ dependencies {
 
     implementation 'com.airbnb.android:lottie:3.4.4'
 
-    // dynamic ui
-    // proteus from Flipkart
-
     implementation 'com.github.flipkart-incubator.proteus:proteus-core:5.0.1'
     implementation 'com.github.flipkart-incubator.proteus:gson-adapter:5.0.1'
     implementation 'com.github.flipkart-incubator.proteus:cardview-v7:5.0.1'

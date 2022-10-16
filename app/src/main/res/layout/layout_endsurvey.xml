@@ -1,21 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#FFFFFF">
+    android:paddingTop="20dp"
+    android:background="#7900ff">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_arrow"
+            android:tint="#fff"
+            android:scaleX="-1"
+            app:layout_constraintTop_toTopOf="@id/txtThank"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/txtThank"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/txtThank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toRightOf="@id/btnBack"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/impact"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            />
+
     <TextView
+        android:id="@+id/txtMate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thank you"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/colorRed"
-        android:textSize="30sp"
-        android:fontFamily="@font/impact"
+        android:text="Your mate - What should I major in"
+        android:textColor="#fff"
+        android:textSize="15sp"
         android:textStyle="bold"
-        android:letterSpacing="0.05"
+        app:layout_constraintTop_toBottomOf="@id/txtThank"
+        app:layout_constraintLeft_toRightOf="@id/btnBack"
+        android:layout_marginTop="20dp"
         />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/txtMate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="25dp"
+        android:padding="25dp"
+        android:background="@drawable/background_rounded_top"
+        >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtMajor"
+            android:text="My ideal major is..."
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtTestTitle"
+            android:text="Test title"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtMajor"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgReadMore"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:src="@drawable/icon_read"
+            android:backgroundTint="#000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/txtAbout"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/txtTestTitle"
+            />
+
+        <TextView
+            android:id="@+id/txtRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read more"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/imgReadMore"
+            app:layout_constraintTop_toTopOf="@id/imgReadMore"
+            />
+        <TextView
+            android:id="@+id/txtAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is the study of this major?"
+            android:textColor="#999999"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@id/imgReadMore"
+            app:layout_constraintTop_toBottomOf="@id/txtRead"
+            />
+
+        <TextView
+            android:id="@+id/txtFirstText"
+            app:layout_constraintTop_toBottomOf="@+id/txtAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Your unique talents are a great fit for applying
+policies, procedures, and theory to drive sustainability
+in civilization."
+            />
+
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/txtFirstText"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/background_circle"
+                    android:layout_width="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:text="Environmental Policy is an environmental studies
+program based in the social sciences."
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/background_circle"
+                    android:layout_width="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:text="It is designed to prepare students for a variety
+ of challenging professions of policies and programs
+dealing with the natural and human-made
+ environment."
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/background_circle"
+                    android:layout_width="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:text="These five fields are atmospheric sciences,
+ecology, environmental chemistry, geosciences,
+and social sciences."
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
         android:id="@+id/layoutContainerSurveyResult"
@@ -23,4 +227,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

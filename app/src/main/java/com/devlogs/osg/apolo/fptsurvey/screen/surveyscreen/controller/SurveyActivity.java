@@ -39,7 +39,7 @@ class SurveyActivity extends AppCompatActivity implements PresentationStateListe
     public SubmitAnswerController submitAnswerController;
     private SurveyMvcView mView;
     private List<Integer> selectedAnswer = new ArrayList<>();
-
+    String name;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,7 +67,7 @@ class SurveyActivity extends AppCompatActivity implements PresentationStateListe
         SurveyScreenPresentationState state = stateStore.restoreState();
         if (state == null) {
             String id = getIntent().getStringExtra("surveyId");
-            String name = getIntent().getStringExtra("surveyName");
+            this.name = getIntent().getStringExtra("surveyName");
 
             Log.d("SurveyActivity", name);
 
@@ -108,7 +108,7 @@ class SurveyActivity extends AppCompatActivity implements PresentationStateListe
         if (effect == null) {return;}
         if (SurveyScreenPresentationState.Effect.SubmitResultDone.class.equals(effect.getClass())) {
             Log.d("SurveyResultId", ((SurveyScreenPresentationState.Effect.SubmitResultDone) effect).getSurveyResultId());
-            EndActivity.start(((SurveyScreenPresentationState.Effect.SubmitResultDone) effect).getSurveyResultId(),this);
+            EndActivity.start(((SurveyScreenPresentationState.Effect.SubmitResultDone) effect).getSurveyResultId(), name,this);
             finish();
         }
     }

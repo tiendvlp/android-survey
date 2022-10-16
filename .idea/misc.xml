@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/background_answer.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/background_checked_rectangle.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/background_circle.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/background_quick_answer.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/background_quickquestion.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/background_rouded_nine.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/background_rounded_four.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/background_rounded_top.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/background_submit_button.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/btn_more_info_background.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/btnsubmit_background.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/drawable_border.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/drawable_checked_button.xml" value="0.174" />
+        <entry key="app/src/main/res/layout/item_header.xml" value="0.16801210898082744" />
+        <entry key="app/src/main/res/layout/item_survey.xml" value="0.16801210898082744" />
+        <entry key="app/src/main/res/layout/layout_endsurvey.xml" value="0.22189089316051502" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

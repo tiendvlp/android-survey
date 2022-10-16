@@ -146,12 +146,9 @@ public class MainMvcViewV2Imp extends BaseMvcView<MainMvcView.Listener> implemen
                 .placeholder(circularProgressDrawable)
                 .into(imgUserInfo);
 
-        imgUserInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                for (Listener listener : getListeners()) {
-                    listener.onBtnUserInfoClicked();
-                }
+        imgUserInfo.setOnClickListener((view) -> {
+            for (Listener listener : getListeners()) {
+                listener.onBtnUserInfoClicked();
             }
         });
 

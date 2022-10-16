@@ -55,9 +55,13 @@ public class EndActivity extends AppCompatActivity implements EndSurveyMvcView.L
         mMvcView = factory.getEndSurveyMvcView(null);
         setContentView(mMvcView.getRootView());
 
-        if (savedInstanceState != null) {
-                surveyResultId = savedInstanceState.getString(SURVEY_RESULT_ID_INTENT_DATA);
-                if (!surveyResultId.isEmpty()) {
+        if (getIntent() != null) {
+            String surveyResultId = getIntent().getStringExtra(SURVEY_RESULT_ID_INTENT_DATA);
+            String surveyTitle = getIntent().getStringExtra(SURVEY_TITLE_INTENT_DATA);
+            mMvcView.setTitle(surveyTitle);
+            
+            Log.d("tiendang-debug", "Found survey result id" + surveyResultId);
+                if (surveyResultId != null && !surveyResultId.isEmpty()) {
                     getSurveyResultLayoutUseCaseSync.execute(surveyResultId).subscribe(new SingleObserver<String>() {
                         @Override
                         public void onSubscribe(@NonNull Disposable d) {
@@ -71,7 +75,7 @@ public class EndActivity extends AppCompatActivity implements EndSurveyMvcView.L
                                 JSONObject data = root.getJSONObject("surveyresult");
                                 JSONObject layout = root.getJSONObject("clientLayout");
                                 Log.d("oklala", layout.toString());
-                                mMvcView.drawUI(layout.toString(), data.toString() );
+//                                mMvcView.drawUI(layout.toString(), data.toString() );
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -84,8 +88,6 @@ public class EndActivity extends AppCompatActivity implements EndSurveyMvcView.L
                     });
                 }
         }
-
-
     }
 
     @Override
@@ -100,16 +102,17 @@ public class EndActivity extends AppCompatActivity implements EndSurveyMvcView.L
         super.onStop();
     }
 
-
-
     public static final String SURVEY_RESULT_ID_INTENT_DATA = "SURVEYRESULT";
+    public static final String SURVEY_TITLE_INTENT_DATA = "SURVEYTITLE";
 
-    public static void start (String surveyResultId, Context context, int...flags) {
+    public static void start (String surveyResultId, String surveyTitle, Context context, int...flags) {
         Intent intent = new Intent(context, EndActivity.class);
         intent.putExtra(SURVEY_RESULT_ID_INTENT_DATA, surveyResultId);
+        intent.putExtra(SURVEY_TITLE_INTENT_DATA, surveyTitle);
         for (int flag : flags) {
             intent.setFlags(flag);
         }
+
         context.startActivity(intent);
     }
 }
