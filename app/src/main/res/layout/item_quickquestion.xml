@@ -28,7 +28,7 @@
             android:textAlignment="center"
             android:autoSizeTextType="uniform"
             android:maxLines="2"
-            android:text="Which price do your think is more suitable for the chicken soup ? asds jsnd jsnd jsdn ajsnd jsnd jsnd jnsd jnsd "
+            android:text="Bạn có hình dung rõ ràng ngành nghề mong muốn của bản thân sẽ làm công việc như thế nào trong tương lai không?"
             android:textColor="#A7401D"
             android:textStyle="bold" />
 
@@ -55,7 +55,8 @@
                 android:paddingBottom="7dp"
                 android:textColor="#A7401D"
                 android:textSize="9sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:text="Có, tôi hiểu biết rất rõ"/>
 
             <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/rbtnAnswer2"
@@ -72,7 +73,8 @@
                 android:paddingBottom="7dp"
                 android:textColor="#A7401D"
                 android:textSize="9sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:text="Không rõ lắm"/>
 
             <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/rbtnAnswer3"
@@ -90,6 +92,7 @@
                 android:textColor="#A7401D"
                 android:textSize="9sp"
                 android:textStyle="bold"
+                android:text="Không"
                 android:visibility="visible" />
         </RadioGroup>
 

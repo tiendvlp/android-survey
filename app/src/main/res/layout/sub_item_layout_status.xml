@@ -47,7 +47,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:maxLines="2"
-        android:text="We have already fixed the wifi network, hello hahahah hahahah ahhaahhaha asdasdhb asdhbasdhasbd asdhb sdb"
+        android:text="Thank you for taking the time to complete this survey. We truly value the information you have provided. Your responses will contribute to our analyses of the texts and suggest new lines of approach to the corpus data."
         android:textSize="9sp"
         app:layout_constraintTop_toBottomOf="@+id/centerHorizontalguide"
         app:layout_constraintLeft_toLeftOf="@+id/txtStatusType"

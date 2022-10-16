@@ -15,7 +15,7 @@
         android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You've already done all of the quick questions"
+        android:text="You've already done all of the quick survey"
         android:textColor="#969696"
         android:layout_gravity="center"
         android:textSize="10sp"
