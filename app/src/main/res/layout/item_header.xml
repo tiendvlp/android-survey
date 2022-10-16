@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/padding"
         android:fontFamily="@font/impact"
-        android:text="Survey"
-        android:textColor="#000000"
+        android:text="Counselling quizz"
+        android:textColor="@color/colorPurple"
         android:textSize="32sp" />
 </LinearLayout>

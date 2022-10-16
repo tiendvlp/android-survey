@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OOPS!! ERRORS"
+        android:text="ERRORS"
         android:fontFamily="@font/impact"
         android:layout_marginTop="0dp"
         android:textAlignment="center"

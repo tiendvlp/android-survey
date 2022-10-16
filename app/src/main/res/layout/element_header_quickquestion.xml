@@ -17,8 +17,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quick answers. quick actions"
-        android:textColor="@color/colorRed"
+        android:text="Let's conduct a quick survey to learn more about Vietnamese student career counseling!"
+        android:textColor="@color/colorPurple"
         android:textSize="10sp"
         />
 
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:text="Quick questions"
+        android:text="Quick surveys, try it out"
         android:textColor="#2F2F2F"
         android:textSize="15sp"
          />

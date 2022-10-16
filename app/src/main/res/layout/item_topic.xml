@@ -36,8 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_marginLeft="@dimen/padding"
         android:layout_height="wrap_content"
-        android:text="Students’ personalities"
-        android:textColor="#5C8FAA"
+        android:text="Which Career Pathway is right for you?"
+        android:textColor="#6962ab"
         android:textSize="18sp"
         android:layout_marginTop="5dp"/>
 

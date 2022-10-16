@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/padding"
         android:fontFamily="@font/impact"
-        android:text="Survey"
-        android:textColor="#5C8FAA"
+        android:text="Counselling quizz"
+        android:textColor="#F7941D"
         android:textSize="32sp"
         android:layout_weight="10"
         />

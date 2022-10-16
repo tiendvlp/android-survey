@@ -8,7 +8,7 @@
     android:padding="10dp"
     android:button="@null"
     android:textSize="12sp"
-    android:text="Not angry because you want to faraway her too !! Fuck her !! Hahaha"
+    android:text="The result will be back soon..."
     android:drawablePadding="20dp"
     android:drawableLeft="@drawable/drawable_checked_button"
     android:textColor="#000000" />
